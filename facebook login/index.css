@@ -1,0 +1,90 @@
+
+*{
+    margin: 5px;
+    padding: 5px;
+}
+
+body{
+    background-color: rgb(223, 221, 221);
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    margin: 10px;
+    padding: 40px;
+    border-radius: 20px;
+    width: 5cqb;
+    font-display: flex;
+}
+
+.medical{
+    margin: 0;
+    width: 80%;
+    text-align: center;
+    border-radius: 0%;
+}
+
+.right{
+    background-color: white;
+    padding: 30px;
+    border-radius: 25px;
+}
+
+.stan{
+    margin: 10px;
+    padding: 10px;
+}
+
+.ike{
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 25px;
+
+}
+
+.fight{
+    margin: 10px;
+    text-align: center;
+    background-color: blue;
+    padding: 10px;
+    height: 20;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 10px;
+
+}
+
+.emeka{
+    margin: 0%;
+    text-align: center;
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: block;
+    
+}
+
+.pass{
+    margin: 10px;
+    text-align: center;
+    /* background-size: auto;
+    padding-right: 20px; */
+    
+}
+
+.class{
+    padding: 20px;
+    margin: 0%;
+}
+
+.loginbtn{
+    width: 100%;
+            padding: 5px;
+            font-size: 16px;
+            background-color: #0e0be9;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+}

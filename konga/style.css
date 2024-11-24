@@ -1,0 +1,747 @@
+.body,
+html,
+.body * {
+  font-family: Helvetica Neue, -apple-system, BlinkMacSystemFont, Segoe UI,
+    Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-container {
+  width: 100%;
+  background-color: #f2f2f2;
+  overflow-x: auto;
+}
+
+.navbar1 {
+  background-color: white;
+}
+
+.nav-ads,
+.navbar-content {
+  width: 100%;
+  display: flex;
+}
+
+.nav-ads img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.navbar-logo-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0 50px;
+  padding: 10px 0;
+  flex-wrap: wrap;
+}
+
+.navbar-logo img {
+  width: 100px;
+}
+
+.navbar2 .konga-logo {
+  border: 2px solid green;
+}
+
+/* Styles for the second navigation bar */
+.navbar2 {
+  background-color: #ed017f;
+  height: 60px;
+}
+
+/* Container for navbar content */
+.navbar-content,
+.navbar-content-3 {
+  gap: 0 15px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-wrap: wrap; */
+}
+
+/* Individual navigation items with hover scaling effect */
+.nav-item {
+  padding: 0 13px;
+  height: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease; /* Animation for scaling */
+}
+
+.nav-item:hover {
+  background-color: white;
+  color: #ed017f;
+  transform: scale(1.05); /* Scale effect on hover */
+}
+
+/* Ensures anchor tag color matches hover styles */
+.nav-item:hover > a {
+  color: #ed017f;
+}
+
+/* Logo image settings */
+.navbar-logo > img {
+  width: 100px;
+}
+
+/* Text styling for navigation */
+.nav-text {
+  font-size: 13px;
+}
+
+/* Search bar container */
+.search-container {
+  width: 37.5rem;
+  display: flex;
+}
+
+/* Input field for search */
+.search-input {
+  width: 100%;
+  padding: 10px;
+  border: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Search button styles with hover scaling effect */
+.search-button {
+  padding: 1px 6px;
+  background-color: #fba100;
+  width: 2.8125rem;
+  border: 0;
+  border-radius: 0 4px 4px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease; /* Animation for scaling */
+}
+
+.search-button:hover {
+  transform: scale(1.1); /* Scale effect on hover */
+}
+
+/* Image inside the search button */
+.search-button > img {
+  margin-top: 5px;
+}
+
+.question-mark {
+  background-color: #f24ea6;
+  border-radius: 50%;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Help container for dropdown */
+.help-container {
+  display: flex;
+  position: relative;
+  gap: 10px;
+}
+
+/* Dropdown menu for help options with fade and slide effect */
+.help-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 100;
+  background-color: rgb(251, 251, 251);
+  color: black;
+  width: 250px;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.9s ease, transform 0.3s ease;
+  transform: translateY(10px);
+}
+
+.help-container:hover > .help-dropdown {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Individual help options */
+.help-option {
+  text-decoration: none;
+  list-style: none;
+  padding: 10px 15px;
+  font-size: 13px;
+}
+
+/* Hover effect for help options */
+.help-option:hover {
+  background-color: rgb(217, 213, 213);
+}
+
+/* Authentication links styling */
+.auth-links > a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Hover effect for auth links */
+.auth-links > a:hover {
+  color: #ed017f;
+}
+
+/* Cart button styling with hover enlargement effect */
+.cart-button {
+  background-color: #33b27b;
+  border: none;
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 6px 16px;
+  border-radius: 4px;
+  gap: 4px;
+  transition: transform 0.3s ease; /* Animation for scaling */
+}
+
+.cart-button:hover {
+  transform: scale(1.05); /* Scale effect on hover */
+}
+
+/* Cart count badge styling */
+.cart-count {
+  background-color: white;
+  color: black;
+  padding: 3px;
+  border-radius: 2px;
+}
+
+.navbar3 {
+  background-color: #94004f;
+}
+
+.navbar-content-3 {
+  height: 40px;
+  color: white;
+  gap: 30px;
+}
+
+.navbar-content-3 > .navbar-item:hover {
+  background-color: white;
+  color: black;
+  height: 100%;
+  padding: 10px;
+}
+
+.menu {
+  display: flex;
+  gap: 10px;
+  font-weight: bold;
+}
+
+main {
+  width: 100%;
+}
+
+.nav-link {
+  display: flex;
+  gap: 5px;
+  margin: 20px 30px;
+}
+
+.nav-link a {
+  text-decoration: none;
+  color: #94004f;
+  font-weight: bold;
+}
+
+.nav-link a:hover {
+  opacity: 0.8;
+}
+.ads {
+    position: relative;
+}
+
+.ads h1 {
+  font-size: 2.5rem;
+  margin: 20px 30px;
+  margin-top: 0px;
+  color: rgb(34, 33, 33);
+}
+
+.ads div {
+  width: 100%;
+  height: 100%;
+  /* padding: 30px; */
+  /* background-color: #f2f2f2; */
+}
+
+.ads div img {
+  /* height: 300px; */
+  width: 100%;
+}
+
+/* Products Container */
+.products {
+  background-color: #f2f2f2;
+  padding: 0 30px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 15px; /* Adds space between cards */
+  justify-content: center;
+  align-items: center;
+}
+
+/* Card Container */
+.card {
+  padding: 5px 15px;
+  border-radius: 3px;
+  background-color: #fff;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+  font-family: Arial, sans-serif;
+  max-width: 400px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Image */
+.card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 3px;
+}
+
+/* Card Content */
+.card-content {
+  padding: 10px 0;
+}
+
+/* Card Title */
+.card-title {
+  font-size: 1em;
+  color: #333;
+  /* font-weight: bold; */
+  margin: 0;
+}
+
+/* Pricing Section */
+.pricing {
+  border-top: 1px solid #c8c7c7;
+  border-bottom: 1px solid #c8c7c7;
+  padding: 10px 0;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.current-price {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.original-price {
+  font-size: 0.85em;
+  color: #888;
+  text-decoration: line-through;
+}
+
+.discount {
+  font-size: 0.8em;
+  color: rgb(250, 58, 90);
+  background-color: pink;
+  padding: 3px;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+/* Time Remaining Section */
+.time-remaining {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #333;
+  font-size: 0.8em;
+  border-bottom: 1px solid #c8c7c7;
+  padding: 10px 0;
+}
+
+/* Sold Section */
+.sold {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+  margin: 10px 0;
+  font-size: 0.8em;
+  color: #333;
+}
+
+.sold p span {
+  font-weight: bold;
+}
+
+.sold input[type="range"] {
+  -webkit-appearance: none;
+  width: 100px;
+  height: 6px;
+  background: linear-gradient(
+    to right,
+    #33b27b var(--progress, 50%),
+    #ddd var(--progress, 50%)
+  );
+  border-radius: 5px;
+  outline: none;
+  overflow: hidden;
+  accent-color: #33b27b;
+}
+
+.sold input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #33b27b;
+  cursor: pointer;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+}
+
+.sold input[type="range"]::-moz-range-thumb {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #33b27b;
+  cursor: pointer;
+}
+
+.sold input[type="range"]::-ms-thumb {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #33b27b;
+  cursor: pointer;
+}
+
+/* Update progress fill based on range value */
+.sold input[type="range"] {
+  --progress: 52%; /* Example percentage fill; dynamically set this value with JS if needed */
+}
+
+/* Button */
+.card-button {
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+  color: #ed017f;
+  background-color: white;
+  border: 1px solid #ed017f;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 1em;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.card-button:hover {
+  background-color: #ed017f;
+  color: white;
+}
+
+/* Footer */
+/* Footer Styling */
+.footer {
+    width: 100%;
+    color: rgb(208, 208, 208);
+    background-color: #0C0C0C;
+    margin-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+  .footer-support,
+  .left-support,
+  .support-item,
+  .footer-subscription,
+  .support-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .footer-support {
+    justify-content: space-between;
+    gap: 5vw;
+    padding: 10px 60px;
+    background-color: #2E2E2E;
+  }
+  
+  .left-support {
+    gap: 50px;
+    /* border: 2px solid red; */
+    flex: 1;
+    justify-content: flex-start;
+
+  }
+  .footer-subscription {
+    gap: 30px;
+  }
+  
+  .support-item {
+    /* width: 100%; */
+    gap: 10px;
+  }
+  
+  .support-icon {
+    background-color: white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+  }
+  
+  .support-title,
+  .footer-subscription h2 {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
+  
+  .support-info,
+  .footer-subscription p {
+    font-size: 14px;
+  }
+  
+  /* Subscription Form */
+  .subscription-form {
+    width: 100%;
+    max-width: 37.5rem;
+    display: flex;
+  }
+  
+  .footer-subscription div{
+    width: 100%;
+  }
+  
+
+  .subscription-input {
+    padding: 10px;
+    border: none;
+    border-radius: 3px 0 0 3px;
+    flex: 1;
+  }
+  
+  .subscription-button {
+    padding: 5px 12px;
+    background-color: #ed017f;
+    color: white;
+    font-weight: 700;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .subscription-button:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Image Sizing */
+  .footer img {
+    width: 15px;
+  }
+
+
+  .footer-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 50px;
+    margin-bottom: 50px;
+  }
+
+  .footer-apps-social {
+    margin-right: 80px;
+  }
+
+  .footer-links, .app-download, .app-download a {
+    display: flex;
+    gap: 30px;
+  }
+
+  .footer-links h2 {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: rgb(189, 187, 187);
+
+  }
+  
+  .footer-links a {
+    font-size: 13px;
+    color: rgb(129, 128, 128);
+    margin-bottom: 10px;
+  }
+  
+  .footer-links a:hover, .footer-info h2:hover {
+    color: rgb(255, 255, 255);
+  }
+
+  .footer a {
+    text-decoration: none;
+  }
+
+  .footer ul {
+    list-style: none;
+  }
+
+  .app-download a {
+    gap: 10px;
+    font-size: 13px;
+    align-items: center;
+    color: rgb(189, 187, 187);
+    margin-bottom: 20px;
+  }
+
+  .app-download a h2{
+    gap: 10px;
+    font-size: 14px;
+    align-items: center;
+    color: rgb(211, 211, 211)
+  }
+
+  .app-download img {
+    width: 24px;
+    height: 26px;
+  }
+
+  .social-media p{
+    font-size: 14px;
+    font-weight: 700;
+    color: rgb(211, 211, 211);
+    transform: translateX(-10px);
+  }
+
+  .social-icons {
+    display: flex;
+    gap: 20px;
+  }
+
+  .social-icons div {
+    background-color: #888;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+  }
+
+  .social-icons div:hover {
+    background-color: #f2f2f2;
+  }
+
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+    gap: 20px;
+    font-size: 13px;
+  }
+
+  .footer-bottom hr {
+    flex: 1;
+    height: 1px;
+    background-color: #2e2c2c;
+    border: none; /* Removes default border styling */
+}
+
+
+
+
+
+
+/* Basic Container and Slider Styling */
+.container {
+    margin: 0 auto;
+    /* max-width: 750px; */
+}
+
+.slider-wrapper {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.slider {
+    display: flex;
+    width: 500%;
+    /*  Five slides wide */
+    transition: transform 0.5s ease;
+    animation: slide-animation 20s infinite;
+}
+
+.slide {
+    flex: 1 0 100%; /* Each slide takes full width */
+}
+
+.slide img {
+    width: 100%;
+    /* border-radius: 0.5rem; */
+    display: block;
+}
+
+.slider-nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.slider-dot {
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 50%;
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+.slider-dot:hover,
+#slide1:checked ~ .slider-wrapper .slider-nav label[for="slide1"],
+#slide2:checked ~ .slider-wrapper .slider-nav label[for="slide2"],
+#slide3:checked ~ .slider-wrapper .slider-nav label[for="slide3"],
+#slide4:checked ~ .slider-wrapper .slider-nav label[for="slide4"],
+#slide5:checked ~ .slider-wrapper .slider-nav label[for="slide5"] {
+    background-color: #333;
+}
+
+/* Hidden Radio Buttons */
+input[type="radio"] {
+    display: none;
+}
+
+/* Animation for Auto Sliding */
+@keyframes slide-animation {
+    0%, 20% { transform: translateX(0); }
+    21%, 40% { transform: translateX(-100%); }
+    41%, 60% { transform: translateX(-200%); }
+    61%, 80% { transform: translateX(-300%); }
+    81%, 100% { transform: translateX(-400%); }
+}
+
+/* CSS to Switch Slides Based on Checked Radio Input */
+#slide1:checked ~ .slider-wrapper .slider { transform: translateX(0); }
+#slide2:checked ~ .slider-wrapper .slider { transform: translateX(-100%); }
+#slide3:checked ~ .slider-wrapper .slider { transform: translateX(-200%); }
+#slide4:checked ~ .slider-wrapper .slider { transform: translateX(-300%); }
+#slide5:checked ~ .slider-wrapper .slider { transform: translateX(-400%); }
